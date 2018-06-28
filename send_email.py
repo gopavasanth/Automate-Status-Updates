@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Gopavasanth
 # Date : 05/05/2018
+=======
+>>>>>>> c08a102038e0280024cb93b535eaec0dbd14398b
 from __future__ import print_function
 import httplib2
 import os
@@ -30,7 +33,11 @@ class send_email:
       message['to'] = to
       message['from'] = sender
       message['subject'] = subject
+<<<<<<< HEAD
       return {'raw': base64.urlsafe_b64encode(message.as_string())}
+=======
+      return {'raw': base64.urlsafe_b64encode(message.as_bytes())}
+>>>>>>> c08a102038e0280024cb93b535eaec0dbd14398b
 
     def create_message_with_attachment(self,
         sender, to, subject, message_text, file):
