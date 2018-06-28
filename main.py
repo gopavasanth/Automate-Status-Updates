@@ -36,8 +36,12 @@ credentials = authInst.get_credentials()
 http = credentials.authorize(httplib2.Http())
 service = discovery.build('gmail', 'v1', http=http)
 
+my_file = open("file.txt", "r")
+
 import send_email
 
 sendInst = send_email.send_email(service)
-message = sendInst.create_message_with_attachment('gopavasanth1999@gmail.com','sreejithsankar55@gmail.com','Hello_API','Hi there, This is Gopa Vasanth', 'image.jpg' )
+#message = sendInst.create_message_with_attachment('gopavasanth1999@gmail.com','p.bhanuprakash12345@gmail.com','Hello_API',my_file.read(), 'image.jpg' )
+message = sendInst.create_message('gopavasanth1999@gmail.com','manikishanghantasala@gmail.com', 'Hello_API',my_file.read())
 sendInst.send_message('me',message)
+my_file.close()
