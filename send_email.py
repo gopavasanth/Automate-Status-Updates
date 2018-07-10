@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-# Gopavasanth
-# Date : 05/05/2018
-=======
->>>>>>> c08a102038e0280024cb93b535eaec0dbd14398b
 from __future__ import print_function
 import httplib2
 import os
 
 from apiclient import discovery
+from apiclient import errors
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
@@ -33,11 +29,9 @@ class send_email:
       message['to'] = to
       message['from'] = sender
       message['subject'] = subject
-<<<<<<< HEAD
       return {'raw': base64.urlsafe_b64encode(message.as_string())}
-=======
       return {'raw': base64.urlsafe_b64encode(message.as_bytes())}
->>>>>>> c08a102038e0280024cb93b535eaec0dbd14398b
+
 
     def create_message_with_attachment(self,
         sender, to, subject, message_text, file):
@@ -95,3 +89,5 @@ class send_email:
         return message
       except errors.HttpError as error:
         print('An error occurred: %s' % error)
+    
+
