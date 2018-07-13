@@ -29,6 +29,7 @@ class send_email:
       message['to'] = to
       message['from'] = sender
       message['subject'] = subject
+      # message['Reply-To'] = reply-to
       return {'raw': base64.urlsafe_b64encode(message.as_string())}
       return {'raw': base64.urlsafe_b64encode(message.as_bytes())}
 
@@ -89,5 +90,3 @@ class send_email:
         return message
       except errors.HttpError as error:
         print('An error occurred: %s' % error)
-    
-

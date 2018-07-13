@@ -59,5 +59,15 @@ def list_messages_matching_query(service, user_id="me", query='[foss-2017] Statu
     except errors.HttpError as error:
 	print('An error occurred: %s' % error)
 
-list_messages_matching_query(service, user_id="me", query='[foss-2017] Status Update [29-06-2018]')
+from datetime import date
+
+today = str(date.today())
+print("Today Date :" + today)
+
+today = '[%s]' % date.today().strftime('%d-%m-%Y')
+
+print (today)
+
+
+list_messages_matching_query(service, user_id="me", query='[foss-2017] Status Update ' + today)
 #return mssg
