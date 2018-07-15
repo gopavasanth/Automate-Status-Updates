@@ -51,7 +51,10 @@ print (today)
 
 sendInst = send_email.send_email(service)
 
-message = sendInst.create_message('gopavasanth1999@gmail.com','foss-2017@googlegroups.com', 'Re: [foss-2017] Status Update ' + today, my_file.read())
+message = sendInst.create_message('gopavasanth1999@gmail.com',
+				'lazyengineersfoss@googlegroups.com',
+				 'Re: [foss-2017] Status Update ' + today, my_file.read()
+				)
 
 sendInst.send_message('me',message)
 

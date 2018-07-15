@@ -2,9 +2,10 @@ Namahshivaya,
 
 Work Done:
 
-	1.Worked with Gmail-API for Automated Status Update.
-	2.Got to know about RFC2822.
-	3.Tested the script with google-group.
+	1.Working with multiple Text editiors as the link's were not sending properly through this method of email.
+	2.Worked with Video Editing and collecting resources for the video.
+	3.Updated my Resume.
+
  
 Regards
 
