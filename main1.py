@@ -57,7 +57,10 @@ message = sendInst.create_message('gopavasanth1999@gmail.com',
 				 'Re: [foss-2017] Status Update ' + today, my_file.read()
 				)
 
-message = sendInst.create_message('gopavasanth1999@gmail.com','Re: lazyengineersfoss@googlegroups.com', '[foss-2017] Status Update [29-06-2018]', my_file.read())
+message = sendInst.create_message('gopavasanth1999@gmail.com',
+				'Re: lazyengineersfoss@googlegroups.com',
+				 '[foss-2017] Status Update ' + today, my_file.read()
+				)
 
 #message = sendInst.send_message( user_id, "Hello this is Testing mail")
 sendInst.send_message('me',message)
