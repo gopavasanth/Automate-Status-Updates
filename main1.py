@@ -51,10 +51,14 @@ print (today)
 
 sendInst = send_email.send_email(service)
 #message = sendInst.create_message_with_attachment('gopavasanth1999@gmail.com','p.bhanuprakash12345@gmail.com','Hello_API',my_file.read(), 'image.jpg' )
+
 message = sendInst.create_message('gopavasanth1999@gmail.com',
-				'foss-2017@googlegroups.com ',
+				'lazyengineersfoss@googlegroups.com',
 				 'Re: [foss-2017] Status Update ' + today, my_file.read()
 				)
+
+message = sendInst.create_message('gopavasanth1999@gmail.com','Re: lazyengineersfoss@googlegroups.com', '[foss-2017] Status Update [29-06-2018]', my_file.read())
+
 #message = sendInst.send_message( user_id, "Hello this is Testing mail")
 sendInst.send_message('me',message)
 my_file.close()
