@@ -11,6 +11,6 @@ Regards
 
 Gopa Vasanth
 Amrita University || Foss@Amrita
-GitHub || Codeforces || Blog || Gerrit
+GitHub || Codeforces || Blog || Gerrit//doubth
 
 " Never try to defeat people, just try to win them "
