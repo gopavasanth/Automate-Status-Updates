@@ -34,7 +34,7 @@ my_file = open("file.txt", "r")
 
 from datetime import date
 today = '[%s]' % date.today().strftime('%d-%m-%Y')
-print (today)
+print (today) #printing present day date.
 
 
 mssg=mesages.list_messages_matching_query(service, user_id="me", query='[foss-2017] Status Update ' + today)
