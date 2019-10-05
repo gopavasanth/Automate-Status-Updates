@@ -7,12 +7,9 @@ This is the platform for updating your automating your daily status update throu
 * Automation can be done by using cronjob.
 * This Actually takes the Data from the file and appends to the body of the email and sends the mail to the particular thread or mail daily.
 
-
-## Featured
-
 ### Deployment
 
-* Adding UI to this.
+* Adding UI to this Gmail-API service.
 
 ## Issues and Contributing
 
@@ -24,7 +21,7 @@ Feel free pull-request your patches and fixes.
 
 ## Copyright & License
 
-Same licence as the one provided by gopavasanth. 
+Same licence as the one provided by Gopavasanth. 
 
 Copyright (C) 2015-2018 - Released under the MIT License.
 
