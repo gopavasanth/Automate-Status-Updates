@@ -1,5 +1,5 @@
 ## Introduction
-This is the platform for updating your automating your daily status update through Gmail-API.
+This script posts your daily status updates daily built using Gmail-API.
 
 ## Features
 
