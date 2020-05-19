@@ -21,7 +21,6 @@ please log them on the [issue tracker](https://github.com/gopavasanth/Gmail-Api/
 
 Feel free pull-request your patches and fixes.
 
-
 ## Copyright & License
 
 Same licence as the one provided by gopavasanth. 
