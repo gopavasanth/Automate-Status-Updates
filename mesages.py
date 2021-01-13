@@ -9,8 +9,6 @@ from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
-
-
 try:
     import argparse
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
@@ -67,7 +65,6 @@ print("Today Date :" + today)
 today = '[%s]' % date.today().strftime('%d-%m-%Y')
 
 print (today)
-
 
 list_messages_matching_query(service, user_id="me", query='[foss-2017] Status Update ' + today)
 #return mssg
